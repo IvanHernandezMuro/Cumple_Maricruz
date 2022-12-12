@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Rubik+Vinyl&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Dosis:wght@600&family=Rubik+Vinyl&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 98vw;
+	height: 100vh;
+	background-image: url(/img/isla-mujeres-03.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.header {
+	text-align: center;
+}
+
+h1 {
+	font-family: "Dosis", sans-serif;
+	font-family: "Rubik Vinyl", cursive;
+	font-size: 5rem;
+	color: lightseagreen;
+}
+
+h2 {
+	font-family: "Caveat", cursive;
+	font-size: 5rem;
+}
+
+H3 {
+	font-family: fantasy;
+	text-align: center;
+}
+p {
+	font-family: "Kalam", cursive;
+	font-size: 1.5rem;
+	margin-top: 25px;
+	text-align: center;
+	text-shadow: 3px;
+}
+
+.picture {
+	margin-top: 35px;
+	margin-bottom: 26px;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+}
+.picture img {
+	width: 500px;
+	animation: resplandor 3s linear infinite;
+}
+
+.verso {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.nosotros img {
+	width: 500px;
+	animation: resplandor 3s linear infinite;
+}
+
+.nosotros {
+	margin-top: 35px;
+	margin-bottom: 26px;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+@media (min-width: 768px) {
+	.content {
+		flex-direction: column;
+		justify-content: center;
+		display: flex;
+	}
+}
+
+@media (min-width: 768px) {
+	.nosotros {
+		flex-direction: column;
+		justify-content: center;
+		display: flex;
+	}
+}
+
+.verso-nos p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.footer {
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+@keyframes resplandor {
+	/* Generador de sombras: https://cssgenerator.org/box-shadow-css-generator.html */
+
+	from {
+		box-shadow: none;
+	}
+	50% {
+		box-shadow: 0px 0px 40px 16px rgba(252, 0, 197, 0.75);
+		-webkit-box-shadow: 0px 0px 40px 16px rgba(252, 0, 197, 0.75);
+		-moz-box-shadow: 0px 0px 40px 16px rgba(252, 0, 197, 0.75);
+	}
+	to {
+		box-shadow: none;
+	}
+}
