@@ -109,6 +109,7 @@ p {
 .footer {
 	margin: auto;
 	margin-bottom: 100px;
+	animation: resplandor 3s linear infinite;
 }
 
 @keyframes resplandor {
