@@ -13,6 +13,7 @@ body {
 	background-image: url(/img/isla-mujeres-03.jpg);
 	background-size: cover;
 	background-attachment: fixed;
+	background-color: lightblue;
 }
 
 .header {
